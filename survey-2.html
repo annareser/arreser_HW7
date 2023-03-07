@@ -8,11 +8,34 @@
     <link rel="stylesheet" href="./css/stylesheet.css">
   </head>
   <body>
-    <h1>Survey page 2</h1>
+    <header><h1>Lifestyle Questions</h1></header>
+    <div>
+    <form action="/add" method="get">
+    <label for="sleep">How many hours of sleep do you get each night?</label><br><br>
+    <input type="radio" id="6" name="sleep" value="6 or less">
+      <label for="6">6 or less</label><br>
+      <input type="radio" id="6-8" name="sleep" value="between 6 and 8">
+      <label for="6-8">between 6 and 8</label><br>
+      <input type="radio" id="8" name="sleep" value="8 or more">
+      <label for="8">8 or more</label>
+    </form><br><br>
+    </div>
+    <div>
+    <form>
+    <label for="activity">Check all the activities you participate in outside of class:</label><br><br>
+    <input type="checkbox" id="activity" name="activity" value="work">
+      <label for="activity"> A Job</label><br>
+      <input type="checkbox" id="activity" name="activity" value="greeklife">
+      <label for="activity"> Greek Life</label><br>
+      <input type="checkbox" id="activity" name="activity" value="org">
+      <label for="activity"> Student Org</label><br>
+      <input type="checkbox" id="activity" name="activity" value="sport">
+      <label for="activity"> Sports</label><br>
+    </form>
+    </div>
       <button onclick="window.location.href='./thank-you.html';">
         Submit survey
       </button>
-    </p>
     <p>page 2 of 2</p>
   </body>
 </html>
