@@ -11,22 +11,46 @@
     <header><h1>General Information</h1></header>
     <div>
     <form action="/action_page.php">
+    <fieldset>
       <label for="fname">First name:</label>
       <input type="text" id="fname" name="fname" autofocus required /><br><br>
       <label for="lname">Last name:</label>
       <input type="text" id="lname" name="lname" required /><br><br>
+    </fieldset>
     </form>
     </div>
-    <form>
-    <label for="gender">Gender:</label><br><br>
     <div>
-    <select name="gender" id="gender" required>
-      <option value="female">Female</option>
-      <option value="male">Male</option>
-      <option value="nonbinary">Non-Binary</option>
-    </select><br><br>
-    </div>
-  </form>
+      <form>
+      <fieldset>
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email" required /><br><br>
+      </fieldset>
+      </form>
+      </div>
+    <form>
+      <fieldset>
+        <legend>How do you identify?</legend>
+        <label for="identity"></label>
+        <input type="checkbox" id="identity" name="identity" value="ciswoman">
+          <label for="identity"> (cis) Woman</label><br>
+          <input type="checkbox" id="identity" name="identity" value="cisman">
+          <label for="identity"> (cis) Man</label><br>
+          <input type="checkbox" id="identity" name="identity" value="trans">
+          <label for="identity"> Trans</label><br>
+          <input type="checkbox" id="identity" name="identity" value="non-binary">
+          <label for="identity"> Non-Binary</label><br>
+          <input type="checkbox" id="identity" name="identity" value="genderqueer">
+          <label for="identity"> Gender queer</label><br>
+          <input type="checkbox" id="identity" name="identity" value="transman">
+          <label for="identity"> (trans) Man</label><br>
+          <input type="checkbox" id="identity" name="identity" value="transwoman">
+          <label for="identity"> (trans) Woman</label><br>
+          <input type="checkbox" id="identity" name="identity" value="genderfluid">
+          <label for="identity"> Gender fluid</label><br>
+          <input type="checkbox" id="identity" name="identity" value="noanswer">
+          <label for="identity"> Prefer not to answer</label><br>
+        </fieldset>
+        </form>
     <div>
       <button onclick="window.location.href='./survey-2.html';">
         Next page

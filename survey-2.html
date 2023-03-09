@@ -10,28 +10,48 @@
   <body>
     <header><h1>Lifestyle Questions</h1></header>
     <div>
-    <form action="/add" method="get">
-    <label for="sleep">How many hours of sleep do you get each night?</label><br><br>
+    <form>
+    <fieldset>
+    <legend>How many hours of sleep do you get each night?</legend>
+    <label for="sleep"></label>
     <input type="radio" id="6" name="sleep" value="6 or less">
       <label for="6">6 or less</label><br>
       <input type="radio" id="6-8" name="sleep" value="between 6 and 8">
       <label for="6-8">between 6 and 8</label><br>
       <input type="radio" id="8" name="sleep" value="8 or more">
-      <label for="8">8 or more</label>
-    </form><br><br>
+      <label for="8">8 or more</label><br><br>
+    </fieldset>
+    </form>
     </div>
     <div>
     <form>
-    <label for="activity">Check all the activities you participate in outside of class:</label><br><br>
-    <input type="checkbox" id="activity" name="activity" value="work">
-      <label for="activity"> A Job</label><br>
-      <input type="checkbox" id="activity" name="activity" value="greeklife">
-      <label for="activity"> Greek Life</label><br>
-      <input type="checkbox" id="activity" name="activity" value="org">
-      <label for="activity"> Student Org</label><br>
-      <input type="checkbox" id="activity" name="activity" value="sport">
-      <label for="activity"> Sports</label><br>
+    <fieldset>
+    <label for="gender">Where do you live?</label><br><br>
+      <div>
+      <select name="residence" id="residence" required>
+        <option value="answer">Select Answer</option>
+        <option value="oncampus">On-campus</option>
+        <option value="offcampus">Off-campus</option>
+        <option value="commute">Commuter</option>
+        <option value="parent">With parent/guardian</option>
+      </select><br><br>
+      </div>
+    </fieldset>
     </form>
+    <div>
+      <form>
+      <fieldset>
+      <legend>How many semester hours do you take?</legend>
+      <label for="hours"></label>
+      <input type="radio" id="12" name="hours" value="12 or less">
+        <label for="12">12 or less</label><br>
+        <input type="radio" id="13-16" name="hours" value="between 13 and 16">
+        <label for="13-16">between 13 and 16</label><br>
+        <input type="radio" id="17" name="hours" value="17 or more">
+        <label for="17">17 or more</label>
+      </fieldset>
+      </form>
+      </div>
     </div>
       <button onclick="window.location.href='./thank-you.html';">
         Submit survey
